@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+lib\data\demo_products.dart
+Modificar demo_product.dart, cambiar la ip por la del vercel Uri.parse('https://joyeriaweb.vercel.app/api/products'),
 ## Getting Started
 
 This project is a starting point for a Flutter application.
