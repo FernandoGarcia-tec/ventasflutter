@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                   ImageCarousel(
                     products: _allProducts,
                     options: CarouselOptions(
-                      height: 280.0,
+                      height: 200.0,
                       autoPlay: true,
                       enlargeCenterPage: true,
                       viewportFraction: 0.8,

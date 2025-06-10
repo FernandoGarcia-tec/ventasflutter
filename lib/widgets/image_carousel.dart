@@ -48,9 +48,13 @@ class ImageCarousel extends StatelessWidget {
 
                 return Container(
                   width: MediaQuery.of(context).size.width,
+                  height: 100, // <-- Cambia aquí la altura de la imagen
                   margin: EdgeInsets.symmetric(horizontal: 5.0),
                   decoration: BoxDecoration(color: Colors.grey),
-                  child: imageWidget,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: imageWidget,
+                  ),
                 );
               },
             );

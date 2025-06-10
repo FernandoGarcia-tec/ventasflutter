@@ -16,7 +16,17 @@ class ProductCard extends StatelessWidget {
       elevation: 4,
       child: Column(
         children: [
-          Expanded(flex: 3, child: ImageLoader(imageUrl: product.imageUrl)),
+          // Imagen ocupa todo el ancho y mantiene la relación de aspecto
+          AspectRatio(
+            aspectRatio:
+                1.1, // Puedes ajustar el valor para más altura o anchura
+            child: ClipRRect(
+              borderRadius: const BorderRadius.vertical(
+                top: Radius.circular(15),
+              ),
+              child: ImageLoader(imageUrl: product.imageUrl),
+            ),
+          ),
           Expanded(
             flex: 4,
             child: Padding(
